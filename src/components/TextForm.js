@@ -8,6 +8,7 @@ export default function TextForm(props) {
   const handleUpClick = ()=>{
     let newText = text.toUpperCase();
     setText(newText)
+    console.log("upper button click");
     props.showAlert("Convert to UpperCase","success")
   }
 
@@ -155,17 +156,17 @@ return (
 
 
       </div>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleUpClick}>Convert to Uppercase</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleLoClick}>Convert to Lowercase</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleSenClick}>Convert to Sentencecase</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleSpCharacter}>Remove Special character</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExtraSpace}>Remove Extra Space Text</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleCopy}>Copy Text</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleClrClick}>Clear Text</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExText}>Extract Text</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExNumber}>Extract Number</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExLink}>Extract Link</button>
-      <button disabled={text.length===0} className="btn btn-danger mx-1 my 1"style={{marginTop: '16px'}}onClick={handleReverseText}>Reverse Text</button>      
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleUpClick}>Convert to Uppercase</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleLoClick}>Convert to Lowercase</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleSenClick}>Convert to Sentencecase</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleSpCharacter}>Remove Special character</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExtraSpace}>Remove Extra Space Text</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleCopy}>Copy Text</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleClrClick}>Clear Text</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExText}>Extract Text</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExNumber}>Extract Number</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleExLink}>Extract Link</button>
+      <button disabled={text.length===0} className="btn btn-secondary mx-1 my 1"style={{marginTop: '16px'}}onClick={handleReverseText}>Reverse Text</button>      
 
     </div>
     <div className="container my-3" style= {{color: props.mode==='dark'?'white':'black'}}>
